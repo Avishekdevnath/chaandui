@@ -1,0 +1,32 @@
+[data-theme="light"],
+.chaand-theme-light,
+:root {
+  --chaand-color-bg: #ffffff;
+  --chaand-color-surface: #f9fafb;
+  --chaand-color-surface-2: #f3f4f6;
+  --chaand-color-text: #111827;
+  --chaand-color-text-muted: #6b7280;
+  --chaand-color-primary: #6366f1;
+  --chaand-color-primary-hover: #4f46e5;
+  --chaand-color-primary-content: #ffffff;
+  --chaand-color-border: #e5e7eb;
+  --chaand-color-danger: #ef4444;
+  --chaand-color-success: #22c55e;
+  --chaand-color-warning: #f59e0b;
+  --chaand-color-focus-ring: rgba(99, 102, 241, 0.65);
+
+  /* Content colors for solid variant text */
+  --chaand-color-success-content: #052e16;
+  --chaand-color-warning-content: #422006;
+  --chaand-color-danger-content: #ffffff;
+
+  /* Hover colors for solid variant backgrounds */
+  --chaand-color-neutral-hover: #e5e7eb;
+  --chaand-color-success-hover: #16a34a;
+  --chaand-color-warning-hover: #d97706;
+  --chaand-color-danger-hover: #dc2626;
+
+  /* WCAG-compliant text for tinted/transparent variants */
+  --chaand-color-success-text: #166534;
+  --chaand-color-warning-text: #92400e;
+}

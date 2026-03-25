@@ -1,0 +1,91 @@
+:root {
+  font-family: "Segoe UI", sans-serif;
+  color: #111827;
+  background:
+    radial-gradient(circle at top left, rgb(191 219 254 / 0.7), transparent 32%),
+    linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+}
+
+body {
+  margin: 0;
+}
+
+.playground-shell {
+  width: min(100%, 72rem);
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
+  gap: 2rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.playground-kicker {
+  margin: 0;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #1d4ed8;
+}
+
+.playground-hero {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 44rem;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+.playground-copy {
+  max-width: 42rem;
+  color: #334155;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.playground-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.playground-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+.playground-media-stack {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (max-width: 64rem) {
+  .playground-shell {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .playground-grid {
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  }
+}
+
+@media (max-width: 48rem) {
+  .playground-shell {
+    align-content: start;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+  }
+
+  .playground-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .playground-copy {
+    font-size: 1rem;
+  }
+}

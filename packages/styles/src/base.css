@@ -1,0 +1,74 @@
+html {
+  color-scheme: light dark;
+}
+
+body {
+  background: var(--chaand-color-bg);
+  color: var(--chaand-color-text);
+}
+
+::selection {
+  background: var(--chaand-color-primary);
+  color: var(--chaand-color-primary-content);
+}
+
+:focus-visible {
+  outline: 2px solid var(--chaand-color-focus-ring);
+  outline-offset: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--chaand-color-surface-2);
+  border: 2px solid var(--chaand-color-bg);
+  border-radius: var(--chaand-radius-full);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--chaand-color-bg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .chaand-button:hover:not(:disabled),
+  .chaand-popover-trigger:hover:not(:disabled) {
+    transform: none;
+  }
+
+  .chaand-popover-content[data-state="open"] {
+    animation: none !important;
+  }
+}
+
+@media (pointer: coarse) {
+  .chaand-button,
+  .chaand-input,
+  .chaand-select,
+  .chaand-popover-trigger,
+  .chaand-tabs-trigger {
+    min-height: 2.75rem;
+  }
+
+  .chaand-checkbox,
+  .chaand-radio {
+    min-height: 2.75rem;
+    align-items: center;
+  }
+
+  .chaand-checkbox-control,
+  .chaand-radio-control {
+    align-self: center;
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "@chaandui/styles",
+  "version": "0.0.1",
+  "description": "Global styles, reset, and utilities for ChaandUI",
+  "main": "src/index.css",
+  "files": ["src"],
+  "dependencies": {
+    "@chaandui/tokens": "workspace:*"
+  },
+  "license": "MIT"
+}

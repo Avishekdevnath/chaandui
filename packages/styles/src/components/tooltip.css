@@ -1,0 +1,11 @@
+.chaand-tooltip {
+  max-width: min(20rem, calc(100vw - 1rem));
+  padding: var(--chaand-space-2) var(--chaand-space-3);
+  border-radius: var(--chaand-radius-md);
+  background: var(--chaand-color-text);
+  color: var(--chaand-color-bg);
+  box-shadow: var(--chaand-shadow-md);
+  font-size: var(--chaand-text-xs);
+  line-height: var(--chaand-leading-normal);
+  z-index: 1100;
+}

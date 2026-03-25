@@ -1,0 +1,25 @@
+[data-chaand-theme="midnight"],
+.chaand-theme-midnight {
+  --chaand-color-bg: #06060e;
+  --chaand-color-surface: #0f0f1a;
+  --chaand-color-surface-2: #1a1a2e;
+  --chaand-color-text: #e8e8f0;
+  --chaand-color-text-muted: #6b6b8a;
+  --chaand-color-primary: #818cf8;
+  --chaand-color-primary-hover: #a5b4fc;
+  --chaand-color-primary-content: #06060e;
+  --chaand-color-border: #1e1e35;
+  --chaand-color-danger: #f87171;
+  --chaand-color-success: #4ade80;
+  --chaand-color-warning: #fbbf24;
+  --chaand-color-focus-ring: rgba(129, 140, 248, 0.65);
+  --chaand-color-success-content: #052e16;
+  --chaand-color-warning-content: #422006;
+  --chaand-color-danger-content: #ffffff;
+  --chaand-color-neutral-hover: #2a2a45;
+  --chaand-color-success-hover: #86efac;
+  --chaand-color-warning-hover: #fcd34d;
+  --chaand-color-danger-hover: #fca5a5;
+  --chaand-color-success-text: #86efac;
+  --chaand-color-warning-text: #fcd34d;
+}

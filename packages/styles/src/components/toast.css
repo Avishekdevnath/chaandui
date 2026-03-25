@@ -1,0 +1,89 @@
+.chaand-toast-viewport {
+  position: fixed;
+  z-index: 1200;
+  display: grid;
+  gap: var(--chaand-space-2);
+  width: min(24rem, calc(100vw - 1.5rem));
+}
+
+.chaand-toast-viewport[data-placement="top-right"] {
+  top: var(--chaand-space-4);
+  right: var(--chaand-space-4);
+}
+
+.chaand-toast-viewport[data-placement="top-left"] {
+  top: var(--chaand-space-4);
+  left: var(--chaand-space-4);
+}
+
+.chaand-toast-viewport[data-placement="bottom-right"] {
+  right: var(--chaand-space-4);
+  bottom: var(--chaand-space-4);
+}
+
+.chaand-toast-viewport[data-placement="bottom-left"] {
+  left: var(--chaand-space-4);
+  bottom: var(--chaand-space-4);
+}
+
+.chaand-toast {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--chaand-space-2);
+  padding: var(--chaand-space-3);
+  border: 1px solid var(--chaand-color-border);
+  border-radius: var(--chaand-radius-lg);
+  background: var(--chaand-color-surface);
+  box-shadow: var(--chaand-shadow-md);
+}
+
+.chaand-toast-copy {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.chaand-toast-title {
+  color: var(--chaand-color-text);
+  font-size: var(--chaand-text-sm);
+  font-weight: var(--chaand-font-weight-semibold);
+}
+
+.chaand-toast-description {
+  margin: 0;
+  color: var(--chaand-color-text-muted);
+  font-size: var(--chaand-text-xs);
+}
+
+.chaand-toast-close {
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 1px solid transparent;
+  border-radius: var(--chaand-radius-sm);
+  background: transparent;
+  color: var(--chaand-color-text-muted);
+  cursor: pointer;
+  font-size: 1.125rem;
+  line-height: 1;
+}
+
+.chaand-toast-close:hover {
+  border-color: var(--chaand-color-border);
+  background: color-mix(in srgb, var(--chaand-color-surface-2) 70%, transparent);
+}
+
+.chaand-toast[data-tone="primary"] {
+  border-color: color-mix(in srgb, var(--chaand-color-primary) 45%, var(--chaand-color-border));
+}
+
+.chaand-toast[data-tone="success"] {
+  border-color: color-mix(in srgb, var(--chaand-color-success) 50%, var(--chaand-color-border));
+}
+
+.chaand-toast[data-tone="warning"] {
+  border-color: color-mix(in srgb, var(--chaand-color-warning) 56%, var(--chaand-color-border));
+}
+
+.chaand-toast[data-tone="danger"] {
+  border-color: color-mix(in srgb, var(--chaand-color-danger) 52%, var(--chaand-color-border));
+}

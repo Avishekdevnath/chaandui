@@ -1,0 +1,16 @@
+:root {
+  --chaand-duration-fast: 100ms;
+  --chaand-duration-normal: 200ms;
+  --chaand-duration-slow: 300ms;
+  --chaand-easing-default: cubic-bezier(0.4, 0, 0.2, 1);
+  --chaand-easing-in: cubic-bezier(0.4, 0, 1, 1);
+  --chaand-easing-out: cubic-bezier(0, 0, 0.2, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --chaand-duration-fast: 0ms;
+    --chaand-duration-normal: 0ms;
+    --chaand-duration-slow: 0ms;
+  }
+}

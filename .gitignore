@@ -1,2 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+.next/
+storybook-static/
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Turbo
+.turbo/
+
 # Planning & AI reasoning docs (local only, not tracked in git)
 /guide/
+/codex_guide/
+/docs/
+/.github/skills/
+
+# Changeset temp
+.changeset/*.md
+!.changeset/config.json

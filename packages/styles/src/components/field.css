@@ -1,0 +1,38 @@
+.chaand-field {
+  display: grid;
+  gap: var(--chaand-space-2);
+}
+
+.chaand-field-label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--chaand-space-1);
+  color: var(--chaand-color-text);
+  font-size: var(--chaand-text-sm);
+  font-weight: var(--chaand-font-weight-medium);
+}
+
+.chaand-field-required {
+  color: var(--chaand-color-danger);
+}
+
+.chaand-field-control {
+  min-width: 0;
+}
+
+.chaand-field-description {
+  margin: 0;
+  color: var(--chaand-color-text-muted);
+  font-size: var(--chaand-text-xs);
+}
+
+.chaand-field-error {
+  margin: 0;
+  color: var(--chaand-color-danger);
+  font-size: var(--chaand-text-xs);
+  font-weight: var(--chaand-font-weight-medium);
+}
+
+.chaand-field[data-invalid="true"] .chaand-field-label {
+  color: color-mix(in srgb, var(--chaand-color-danger) 85%, var(--chaand-color-text));
+}

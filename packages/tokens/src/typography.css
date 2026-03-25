@@ -1,0 +1,17 @@
+:root {
+  --chaand-font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --chaand-font-mono: ui-monospace, "Cascadia Code", "Fira Code", monospace;
+  --chaand-text-xs: 0.75rem;
+  --chaand-text-sm: 0.875rem;
+  --chaand-text-md: 1rem;
+  --chaand-text-lg: 1.125rem;
+  --chaand-text-xl: 1.25rem;
+  --chaand-text-2xl: 1.5rem;
+  --chaand-leading-tight: 1.25;
+  --chaand-leading-normal: 1.5;
+  --chaand-leading-relaxed: 1.75;
+  --chaand-font-weight-normal: 400;
+  --chaand-font-weight-medium: 500;
+  --chaand-font-weight-semibold: 600;
+  --chaand-font-weight-bold: 700;
+}

@@ -1,0 +1,10 @@
+export { Architecture } from "./Architecture";
+export { AccentGrid } from "./AccentGrid";
+export { ComponentShowcase } from "./ComponentShowcase";
+export { Comparison } from "./Comparison";
+export { FaqAndCta } from "./FaqAndCta";
+export { FeatureBar } from "./FeatureBar";
+export { GetStarted } from "./GetStarted";
+export { Hero } from "./Hero";
+export { SocialProof } from "./SocialProof";
+export { Testimonials } from "./Testimonials";

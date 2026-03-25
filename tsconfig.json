@@ -1,0 +1,7 @@
+{
+  "extends": "./packages/config-typescript/tsconfig.react.json",
+  "compilerOptions": {
+    "baseUrl": "."
+  },
+  "exclude": ["node_modules", "dist"]
+}

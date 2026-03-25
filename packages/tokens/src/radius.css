@@ -1,0 +1,8 @@
+:root {
+  --chaand-radius-none: 0;
+  --chaand-radius-sm: 0.25rem;
+  --chaand-radius-md: 0.5rem;
+  --chaand-radius-lg: 0.75rem;
+  --chaand-radius-xl: 1rem;
+  --chaand-radius-full: 9999px;
+}

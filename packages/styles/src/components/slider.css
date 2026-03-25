@@ -1,0 +1,86 @@
+.chaand-slider {
+  width: 100%;
+  min-height: 2.5rem;
+  margin: 0;
+  border-radius: var(--chaand-radius-full);
+  background: transparent;
+  accent-color: var(--chaand-color-primary);
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.chaand-slider[data-size="sm"] {
+  min-height: 2rem;
+}
+
+.chaand-slider[data-size="lg"] {
+  min-height: 3rem;
+}
+
+.chaand-slider::-webkit-slider-runnable-track {
+  height: 0.375rem;
+  border-radius: var(--chaand-radius-full);
+  background: color-mix(in srgb, var(--chaand-color-surface-2) 80%, transparent);
+}
+
+.chaand-slider::-webkit-slider-thumb {
+  width: 1rem;
+  height: 1rem;
+  margin-top: calc((0.375rem - 1rem) / 2);
+  border: 2px solid var(--chaand-color-bg);
+  border-radius: var(--chaand-radius-full);
+  background: var(--chaand-color-primary);
+  box-shadow: var(--chaand-shadow-sm);
+  transition:
+    transform var(--chaand-duration-fast) var(--chaand-easing-default),
+    box-shadow var(--chaand-duration-fast) var(--chaand-easing-default),
+    background-color var(--chaand-duration-fast) var(--chaand-easing-default);
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.chaand-slider::-moz-range-track {
+  height: 0.375rem;
+  border: none;
+  border-radius: var(--chaand-radius-full);
+  background: color-mix(in srgb, var(--chaand-color-surface-2) 80%, transparent);
+}
+
+.chaand-slider::-moz-range-thumb {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid var(--chaand-color-bg);
+  border-radius: var(--chaand-radius-full);
+  background: var(--chaand-color-primary);
+  box-shadow: var(--chaand-shadow-sm);
+  transition:
+    transform var(--chaand-duration-fast) var(--chaand-easing-default),
+    box-shadow var(--chaand-duration-fast) var(--chaand-easing-default),
+    background-color var(--chaand-duration-fast) var(--chaand-easing-default);
+}
+
+.chaand-slider:hover:not(:disabled)::-webkit-slider-thumb,
+.chaand-slider:hover:not(:disabled)::-moz-range-thumb {
+  transform: scale(1.05);
+}
+
+.chaand-slider:active:not(:disabled)::-webkit-slider-thumb,
+.chaand-slider:active:not(:disabled)::-moz-range-thumb {
+  transform: scale(0.97);
+}
+
+.chaand-slider[data-invalid="true"]::-webkit-slider-runnable-track,
+.chaand-slider[data-invalid="true"]::-moz-range-track {
+  background: color-mix(in srgb, var(--chaand-color-danger) 26%, var(--chaand-color-surface-2));
+}
+
+.chaand-slider:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.chaand-slider:disabled::-webkit-slider-thumb,
+.chaand-slider:disabled::-moz-range-thumb {
+  box-shadow: none;
+}

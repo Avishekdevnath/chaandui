@@ -1,0 +1,19 @@
+{
+  "name": "chaandui",
+  "private": true,
+  "packageManager": "pnpm@10.6.2",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "test": "turbo test",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "storybook": "pnpm --filter @chaandui/storybook dev",
+    "docs": "pnpm --filter @chaandui/docs dev",
+    "clean": "turbo clean"
+  },
+  "devDependencies": {
+    "turbo": "^2.4.0",
+    "@changesets/cli": "^2.29.0"
+  }
+}

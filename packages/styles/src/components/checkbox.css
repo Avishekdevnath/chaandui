@@ -1,0 +1,90 @@
+.chaand-checkbox {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: var(--chaand-space-2);
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.chaand-checkbox-control {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.chaand-checkbox-box {
+  display: inline-flex;
+  width: 1.125rem;
+  height: 1.125rem;
+  border: 1px solid var(--chaand-color-border);
+  border-radius: var(--chaand-radius-sm);
+  background: var(--chaand-color-bg);
+  transition:
+    background-color var(--chaand-duration-fast) var(--chaand-easing-default),
+    border-color var(--chaand-duration-fast) var(--chaand-easing-default),
+    box-shadow var(--chaand-duration-fast) var(--chaand-easing-default);
+}
+
+.chaand-checkbox-box::after {
+  content: "";
+  width: 0.32rem;
+  height: 0.56rem;
+  border: solid transparent;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg) scale(0);
+  margin: 0.14rem auto 0;
+  transition: transform var(--chaand-duration-fast) var(--chaand-easing-default);
+}
+
+.chaand-checkbox[data-size="sm"] .chaand-checkbox-box {
+  width: 1rem;
+  height: 1rem;
+}
+
+.chaand-checkbox[data-size="lg"] .chaand-checkbox-box {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.chaand-checkbox-copy {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.chaand-checkbox-label {
+  color: var(--chaand-color-text);
+  font-size: var(--chaand-text-sm);
+  line-height: var(--chaand-leading-tight);
+}
+
+.chaand-checkbox-description {
+  color: var(--chaand-color-text-muted);
+  font-size: var(--chaand-text-xs);
+}
+
+.chaand-checkbox-input:focus-visible + .chaand-checkbox-box {
+  border-color: var(--chaand-color-primary);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--chaand-color-primary) 25%, transparent);
+}
+
+.chaand-checkbox-input:checked + .chaand-checkbox-box {
+  border-color: var(--chaand-color-primary);
+  background: var(--chaand-color-primary);
+}
+
+.chaand-checkbox-input:checked + .chaand-checkbox-box::after {
+  border-color: var(--chaand-color-primary-content);
+  transform: rotate(45deg) scale(1);
+}
+
+.chaand-checkbox[data-invalid="true"] .chaand-checkbox-box {
+  border-color: var(--chaand-color-danger);
+}
+
+.chaand-checkbox[data-disabled="true"] {
+  opacity: 0.62;
+  cursor: not-allowed;
+}
+
+.chaand-checkbox[data-disabled="true"] .chaand-checkbox-box {
+  background: color-mix(in srgb, var(--chaand-color-surface) 80%, var(--chaand-color-bg));
+}

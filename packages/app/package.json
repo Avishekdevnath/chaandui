@@ -1,0 +1,29 @@
+{
+  "name": "@chaandui/app",
+  "version": "0.0.1",
+  "description": "Application-level components for ChaandUI",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "files": ["src"],
+  "scripts": {
+    "test": "vitest run --passWithNoTests",
+    "test:watch": "vitest --passWithNoTests",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@chaandui/primitives": "workspace:*",
+    "@chaandui/hooks": "workspace:*",
+    "@chaandui/utils": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@chaandui/typescript-config": "workspace:*",
+    "@testing-library/react": "^16.3.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  },
+  "license": "MIT"
+}

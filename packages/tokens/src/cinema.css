@@ -1,0 +1,25 @@
+[data-chaand-theme="cinema"],
+.chaand-theme-cinema {
+  --chaand-color-bg: #0b0b10;
+  --chaand-color-surface: #11131d;
+  --chaand-color-surface-2: #1a1f2f;
+  --chaand-color-text: #ececf5;
+  --chaand-color-text-muted: #8b8ba5;
+  --chaand-color-primary: #d97706;
+  --chaand-color-primary-hover: #f59e0b;
+  --chaand-color-primary-content: #0b0b10;
+  --chaand-color-border: #2b3142;
+  --chaand-color-danger: #ef4444;
+  --chaand-color-success: #10b981;
+  --chaand-color-warning: #f59e0b;
+  --chaand-color-focus-ring: rgba(217, 119, 6, 0.65);
+  --chaand-color-success-content: #052e16;
+  --chaand-color-warning-content: #422006;
+  --chaand-color-danger-content: #ffffff;
+  --chaand-color-neutral-hover: #252c3d;
+  --chaand-color-success-hover: #34d399;
+  --chaand-color-warning-hover: #fbbf24;
+  --chaand-color-danger-hover: #f87171;
+  --chaand-color-success-text: #6ee7b7;
+  --chaand-color-warning-text: #fcd34d;
+}

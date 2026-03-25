@@ -1,0 +1,103 @@
+.chaand-radio-group {
+  display: grid;
+  gap: var(--chaand-space-2);
+}
+
+.chaand-radio-group-label {
+  color: var(--chaand-color-text);
+  font-size: var(--chaand-text-sm);
+  font-weight: var(--chaand-font-weight-semibold);
+}
+
+.chaand-radio-group-description {
+  margin: 0;
+  color: var(--chaand-color-text-muted);
+  font-size: var(--chaand-text-xs);
+}
+
+.chaand-radio-group-options {
+  display: grid;
+  gap: var(--chaand-space-2);
+}
+
+.chaand-radio {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: var(--chaand-space-2);
+  cursor: pointer;
+}
+
+.chaand-radio-control {
+  flex-shrink: 0;
+}
+
+.chaand-radio-dot {
+  display: inline-flex;
+  width: 1.125rem;
+  height: 1.125rem;
+  border: 1px solid var(--chaand-color-border);
+  border-radius: var(--chaand-radius-full);
+  background: var(--chaand-color-bg);
+  transition:
+    border-color var(--chaand-duration-fast) var(--chaand-easing-default),
+    box-shadow var(--chaand-duration-fast) var(--chaand-easing-default);
+}
+
+.chaand-radio-dot::after {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  margin: auto;
+  border-radius: inherit;
+  background: var(--chaand-color-primary);
+  transform: scale(0);
+  transition: transform var(--chaand-duration-fast) var(--chaand-easing-default);
+}
+
+.chaand-radio[data-size="sm"] .chaand-radio-dot {
+  width: 1rem;
+  height: 1rem;
+}
+
+.chaand-radio[data-size="lg"] .chaand-radio-dot {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.chaand-radio-copy {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.chaand-radio-label {
+  color: var(--chaand-color-text);
+  font-size: var(--chaand-text-sm);
+}
+
+.chaand-radio-description {
+  color: var(--chaand-color-text-muted);
+  font-size: var(--chaand-text-xs);
+}
+
+.chaand-radio-input:focus-visible + .chaand-radio-dot {
+  border-color: var(--chaand-color-primary);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--chaand-color-primary) 25%, transparent);
+}
+
+.chaand-radio-input:checked + .chaand-radio-dot {
+  border-color: var(--chaand-color-primary);
+}
+
+.chaand-radio-input:checked + .chaand-radio-dot::after {
+  transform: scale(1);
+}
+
+.chaand-radio[data-invalid="true"] .chaand-radio-dot,
+.chaand-radio-group[data-invalid="true"] .chaand-radio-dot {
+  border-color: var(--chaand-color-danger);
+}
+
+.chaand-radio[data-disabled="true"] {
+  opacity: 0.62;
+  cursor: not-allowed;
+}

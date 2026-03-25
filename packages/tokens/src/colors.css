@@ -1,0 +1,24 @@
+:root {
+  --chaand-color-bg: initial;
+  --chaand-color-surface: initial;
+  --chaand-color-surface-2: initial;
+  --chaand-color-text: initial;
+  --chaand-color-text-muted: initial;
+  --chaand-color-primary: initial;
+  --chaand-color-primary-content: initial;
+  --chaand-color-primary-hover: initial;
+  --chaand-color-border: initial;
+  --chaand-color-danger: initial;
+  --chaand-color-success: initial;
+  --chaand-color-warning: initial;
+  --chaand-color-focus-ring: initial;
+  --chaand-color-success-content: initial;
+  --chaand-color-warning-content: initial;
+  --chaand-color-danger-content: initial;
+  --chaand-color-neutral-hover: initial;
+  --chaand-color-success-hover: initial;
+  --chaand-color-warning-hover: initial;
+  --chaand-color-danger-hover: initial;
+  --chaand-color-success-text: initial;
+  --chaand-color-warning-text: initial;
+}

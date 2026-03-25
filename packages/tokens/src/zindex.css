@@ -1,0 +1,10 @@
+:root {
+  --chaand-z-base: 0;
+  --chaand-z-dropdown: 100;
+  --chaand-z-sticky: 200;
+  --chaand-z-overlay: 300;
+  --chaand-z-modal: 400;
+  --chaand-z-popover: 500;
+  --chaand-z-tooltip: 600;
+  --chaand-z-toast: 700;
+}

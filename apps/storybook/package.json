@@ -1,0 +1,26 @@
+{
+  "name": "@chaandui/storybook",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "storybook dev -p 6006 -c .storybook",
+    "build": "storybook build -c .storybook"
+  },
+  "dependencies": {
+    "@chaandui/react": "workspace:*",
+    "@chaandui/media": "workspace:*",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@chaandui/typescript-config": "workspace:*",
+    "@storybook/addon-essentials": "^8.6.18",
+    "@storybook/react": "^8.6.18",
+    "@storybook/react-vite": "^8.6.18",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "storybook": "^8.6.18",
+    "typescript": "^5.7.0",
+    "vite": "^6.0.0"
+  }
+}
